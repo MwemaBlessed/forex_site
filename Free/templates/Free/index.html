@@ -1,0 +1,52 @@
+{% extends 'base.html' %} {% load static %} {% block title %}Free Forex Signals
+- ForexSignal-Pips{% endblock %} {% block content %}
+<h2>Free Forex Signals</h2>
+<div
+  style="
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  "
+>
+  <!-- Left side: image -->
+  <div style="flex: 1; min-width: 300px">
+    <img
+      src="{% static 'images/forex-chart.jpg' %}"
+      alt="Forex Chart"
+      style="width: 100%; border-radius: 8px"
+    />
+  </div>
+
+  <!-- Right side: text -->
+  <div style="flex: 1; min-width: 300px">
+    <p>
+      We provide <strong>1-2 free signals</strong> in our free Telegram channel
+      every day.
+    </p>
+
+    <p>
+      If you want to test our signals, go to our free channel and test it out.
+    </p>
+
+    <p>
+      Thousands of members are making money from our free signals every day.
+      <a
+        href="https://t.me/your_free_channel"
+        target="_blank"
+        class="telegram-button"
+        >Click here to join our free channel.</a
+      >
+    </p>
+
+    <p>
+      If you don’t have Telegram,
+      <a href="https://telegram.org/dl" target="_blank"
+        >click here to download</a
+      >
+      on your Android, iOS, or Microsoft Windows device.
+    </p>
+  </div>
+</div>
+{% endblock %}

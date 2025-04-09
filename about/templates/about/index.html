@@ -1,0 +1,41 @@
+{% extends 'base.html' %} {% load static %} {% block title %}About Us -
+ForexSignal-Pips{% endblock %} {% block content %}
+<h2>About Us</h2>
+
+<div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem">
+  <!-- Left side: Image -->
+  <div style="flex: 1; min-width: 300px">
+    <img
+      src="{% static 'images/about-image.jpg' %}"
+      alt="About Us"
+      style="width: 100%; border-radius: 8px"
+    />
+  </div>
+
+  <!-- Right side: Text -->
+  <div style="flex: 1; min-width: 300px">
+    <h3>Our Mission</h3>
+    <p>
+      At ForexSignal-Pips, our mission is to provide traders with high-quality,
+      reliable forex signals that help them make informed, profitable decisions
+      in the forex market.
+    </p>
+
+    <h3>What Sets Us Apart</h3>
+    <ul style="line-height: 1.8">
+      <li>✅ Proven track record of successful forex signals</li>
+      <li>✅ Transparent, easy-to-understand strategies</li>
+      <li>✅ 24/7 support for all our members</li>
+      <li>
+        ✅ A community of successful traders sharing knowledge and experiences
+      </li>
+    </ul>
+
+    <h3>Join Our Community</h3>
+    <p>
+      Be a part of our growing community of traders. Whether you're a beginner
+      or experienced, we’re here to help you succeed.
+    </p>
+  </div>
+</div>
+{% endblock %}
