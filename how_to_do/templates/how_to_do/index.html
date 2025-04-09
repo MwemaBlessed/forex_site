@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% load static %} {% block title %}How To Do -
+ForexSignal-Pips{% endblock %} {% block content %}
+<h2>Getting Started with Forex Signals</h2>
+<p>Follow these guides to understand the process:</p>
+
+<div>
+  {% for guide in guides %}
+  <div
+    style="
+      margin-bottom: 2rem;
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    "
+  >
+    <h3>{{ guide.title }}</h3>
+    <p>{{ guide.content|linebreaks }}</p>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

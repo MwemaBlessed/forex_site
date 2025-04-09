@@ -1,0 +1,56 @@
+{% extends 'base.html' %} {% load static %} {% block title %}Testimonials -
+ForexSignal-Pips{% endblock %} {% block content %}
+<h2>Success Stories</h2>
+
+<div
+  style="
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+  "
+>
+  <!-- Testimonial 1 -->
+  <div style="flex: 1 1 200px; text-align: center">
+    <img
+      src="{% static 'images/testimonial1.jpg' %}"
+      alt="Successful Client 1"
+      style="
+        width: 100%;
+        border-radius: 8px;
+        max-height: 300px;
+        object-fit: cover;
+      "
+    />
+  </div>
+
+  <!-- Testimonial 2 -->
+  <div style="flex: 1 1 200px; text-align: center">
+    <img
+      src="{% static 'images/testimonial2.jpg' %}"
+      alt="Successful Client 2"
+      style="
+        width: 100%;
+        border-radius: 8px;
+        max-height: 300px;
+        object-fit: cover;
+      "
+    />
+  </div>
+
+  <!-- Testimonial 3 -->
+  <div style="flex: 1 1 200px; text-align: center">
+    <img
+      src="{% static 'images/testimonial3.jpg' %}"
+      alt="Successful Client 3"
+      style="
+        width: 100%;
+        border-radius: 8px;
+        max-height: 300px;
+        object-fit: cover;
+      "
+    />
+  </div>
+</div>
+{% endblock %}

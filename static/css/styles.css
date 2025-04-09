@@ -1,0 +1,290 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.telegram-button {
+    display: inline-block;
+    background-color: #0088cc;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.telegram-button:hover {
+    background-color: #007ab8;
+}
+h2 {
+    color: #003366;
+}
+
+h3 {
+    color: #0055aa;
+    margin-bottom: 0.5rem;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a.telegram-button {
+    display: inline-block;
+    background-color: #0088cc;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+a.telegram-button:hover {
+    background-color: #0072a8;
+}
+ul {
+    margin-left: 1.5rem;
+}
+ul li::before {
+    content: "✔ ";
+    color: green;
+    font-weight: bold;
+}
+.subscription-button {
+    display: inline-block;
+    background-color: #0088cc;
+    color: white;
+    padding: 12px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.subscription-button:hover {
+    background-color: #0072a8;
+}
+@media (max-width: 768px) {
+    .subscription-plans {
+        display: block;
+        margin: 0;
+    }
+
+    .subscription-plans .plan {
+        margin-bottom: 2rem;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+@media (max-width: 768px) {
+    .testimonial-image {
+        flex: 1 1 100%;
+        margin-bottom: 1rem;
+    }
+}
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    margin-top: 1rem;
+}
+
+ul {
+    margin-left: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+@media (max-width: 768px) {
+    .about-content {
+        display: block;
+    }
+
+    .about-content img {
+        margin-bottom: 2rem;
+    }
+}
+/* Basic styling for body and text */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #0088cc;
+}
+
+a:hover {
+    color: #0072a8;
+}
+
+/* Standard padding for content */
+.container {
+    padding: 2rem;
+}
+/* Flexbox layout for sections like testimonials, subscription, services, etc. */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+/* Add some styles to individual boxes (plan boxes, testimonial images, etc.) */
+.container > div {
+    flex: 1;
+    min-width: 300px; /* Ensures that columns don't get too narrow */
+}
+
+/* Style for images */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Button styles */
+.subscription-button, .telegram-button {
+    display: inline-block;
+    background-color: #0088cc;
+    color: white;
+    padding: 12px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.subscription-button:hover, .telegram-button:hover {
+    background-color: #0072a8;
+}
+/* Tablet screens and smaller (max-width 768px) */
+@media (max-width: 768px) {
+    /* Stack the testimonial images, subscription plans, and other sections vertically */
+    .container {
+        display: block;
+    }
+
+    .container > div {
+        margin-bottom: 2rem;  /* Adds spacing between stacked items */
+    }
+
+    h2, h3 {
+        text-align: center;
+    }
+
+    .subscription-button, .telegram-button {
+        width: 100%;  /* Full width on mobile */
+        text-align: center;
+    }
+
+    .testimonial-image img {
+        max-height: 200px;  /* Make images smaller on mobile */
+    }
+}
+
+/* Mobile screens and smaller (max-width 480px) */
+@media (max-width: 480px) {
+    /* Make text and content more readable on small screens */
+    .container {
+        padding: 1rem;
+    }
+
+    .container > div {
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;  /* Reduce font size for smaller screens */
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .testimonial-image img {
+        max-height: 150px;  /* Further reduce image size */
+    }
+
+    /* Reduce padding on the buttons */
+    .subscription-button, .telegram-button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+/* Make sure the navbar and logo look good on mobile */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar img {
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 768px) {
+    .testimonial-image {
+        flex: 1 1 100%;  /* Ensure the images take full width */
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        display: block;  /* Stack the subscription plans vertically */
+    }
+
+    .container > div {
+        margin-bottom: 1.5rem;
+    }
+}
